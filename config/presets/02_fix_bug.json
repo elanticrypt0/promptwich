@@ -1,0 +1,12 @@
+{
+  "name": "Fix Bug",
+  "description": "Analizar y corregir un bug específico",
+  "values": {
+    "role": "Senior Debugger and {{LANGUAGE}} expert",
+    "task": "Identify the root cause and fix the bug described below.",
+    "context": "Analyze the provided code and error messages carefully.",
+    "constraints": "- Minimal changes only\n- Don't refactor unrelated code\n- Preserve existing behavior",
+    "output": "1. Root cause analysis\n2. Fixed code with comments\n3. Test case to prevent regression"
+  },
+  "modifiers": ["cot", "no_yapping"]
+}

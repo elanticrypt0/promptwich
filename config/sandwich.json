@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "app_name": "Promptwich",
+    "version": "1.0.0"
+  },
+  "ingredients": [
+    {
+      "id": "role",
+      "label": "Rol del Sistema",
+      "prefix": "# ROLE",
+      "placeholder": "Senior Software Architect...",
+      "default": "Senior Software Architect expert in {{LANGUAGE}}"
+    },
+    {
+      "id": "task",
+      "label": "Tarea Principal",
+      "prefix": "# TASK",
+      "placeholder": "Define the goal..."
+    },
+    {
+      "id": "context",
+      "label": "Contexto Técnico",
+      "prefix": "# CONTEXT",
+      "placeholder": "Stack details..."
+    },
+    {
+      "id": "constraints",
+      "label": "Limitaciones",
+      "prefix": "# CONSTRAINTS",
+      "placeholder": "- Strict typing\n- No external libs"
+    },
+    {
+      "id": "output",
+      "label": "Formato de Salida",
+      "prefix": "# OUTPUT",
+      "placeholder": "1. File tree\n2. Code blocks"
+    }
+  ],
+  "modifiers": [
+    {
+      "id": "no_yapping",
+      "label": "Sin Rodeos (Conciso)",
+      "text": "Go straight to the point. No theoretical explanations unless critical. Only code and essential comments."
+    },
+    {
+      "id": "cot",
+      "label": "Pensamiento en Cadena",
+      "text": "Think step-by-step before generating the final code. Identify edge cases."
+    },
+    {
+      "id": "safety",
+      "label": "Modo Seguro (OWASP)",
+      "text": "Analyze for OWASP Top 10 vulnerabilities before suggesting code."
+    }
+  ]
+}

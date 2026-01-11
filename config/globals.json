@@ -1,0 +1,38 @@
+{
+  "variables": [
+    {
+      "key": "LANGUAGE",
+      "label": "Lenguaje Principal",
+      "options": [
+        "Javascript vanilla",
+        "TypeScript (Strict)",
+        "PHP 5.6.4 (Legacy)",
+        "PHP 8.2+",
+        "Python 3.11+",
+        "Go 1.22+"
+      ]
+    },
+    {
+      "key": "FRAMEWORK",
+      "label": "Framework Backend",
+      "dependsOn": "LANGUAGE",
+      "conditionalOptions": {
+        "TypeScript (Strict)": ["None","Runtime: Bun + Elysia","Runtime: Bun + HONO","Runtime:nodejs"],
+        "Go 1.22+": ["None", "Gin", "Fiber"],
+        "PHP 8.2+": ["None", "Laravel 12+", "FlightPHP", "Symfony"],
+        "PHP 5.6.4 (Legacy)": ["None", "Laravel 5.4", "FlightPHP", "Symfony"],
+        "Python 3.11+": ["None", "FastAPI", "Flask", "Django"]
+      }
+    },
+    {
+      "key": "DATABASE",
+      "label": "Motor de Base de Datos",
+      "options": ["None","MySQL 5.7", "MySQL 8", "PostgreSQL", "SQLite"]
+    },
+    {
+      "key": "CSS_FRAMEWORK",
+      "label": "Framework CSS",
+      "options": ["TailwindCSS", "Bootstrap 5", "CSS Modules", "None"]
+    }
+  ]
+}

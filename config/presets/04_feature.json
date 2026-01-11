@@ -1,0 +1,12 @@
+{
+  "name": "New Feature",
+  "description": "Implementar una nueva funcionalidad",
+  "values": {
+    "role": "Senior {{LANGUAGE}} Developer with expertise in feature design",
+    "task": "Implement the new feature described below following best practices.",
+    "context": "This feature should integrate seamlessly with the existing codebase.",
+    "constraints": "- Write clean, testable code\n- Include error handling\n- Follow existing code patterns",
+    "output": "1. Implementation plan\n2. Complete code for the feature\n3. Unit tests\n4. Usage example"
+  },
+  "modifiers": ["cot", "safety"]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Init Project",
+  "description": "Inicializar un nuevo proyecto desde cero",
+  "values": {
+    "role": "Senior Software Architect expert in {{LANGUAGE}}",
+    "task": "Create a new project structure with best practices and modern tooling.",
+    "context": "This is a greenfield project. Use {{CSS_FRAMEWORK}} for styling.",
+    "constraints": "- Follow SOLID principles\n- Include proper error handling\n- Add TypeScript strict mode",
+    "output": "1. Project folder structure\n2. Configuration files\n3. Base components/modules\n4. Create a README.md file with proyect docs\n5. Create DEVELOPMENT.md file with tecnical docs of the core features."
+  },
+  "modifiers": [
+    "no_yapping"
+  ]
+}

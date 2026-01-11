@@ -1,0 +1,12 @@
+{
+  "name": "Refactor",
+  "description": "Refactorizar código existente",
+  "values": {
+    "role": "Senior Software Architect specializing in clean code and {{LANGUAGE}}",
+    "task": "Refactor the provided code to improve readability, maintainability, and performance.",
+    "context": "The code works but needs improvement. Preserve all existing functionality.",
+    "constraints": "- Keep backward compatibility\n- Add proper types\n- Follow DRY and SOLID principles",
+    "output": "1. Refactored code\n2. Brief explanation of changes\n3. Any breaking changes noted"
+  },
+  "modifiers": ["cot"]
+}
