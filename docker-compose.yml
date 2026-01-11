@@ -1,0 +1,8 @@
+services:
+  promptwich:
+    build: .
+    ports:
+      - "5006:5006"
+    volumes:
+      - ./config:/app/config
+    restart: unless-stopped
